@@ -1,0 +1,36 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "defaultTitle",
+    "description": "defaultDescription",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://osc-api-server-alb-1638724331.us-east-2.elb.amazonaws.com"
+    }
+  ],
+  "paths": {
+    "/perils": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "http://osc-api-server-alb-1638724331.us-east-2.elb.amazonaws.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://osc-api-server-alb-1638724331.us-east-2.elb.amazonaws.com"
+        }
+      ]
+    }
+  },
+  "components": {}
+}

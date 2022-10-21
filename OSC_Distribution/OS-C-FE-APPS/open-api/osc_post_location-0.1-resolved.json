@@ -1,0 +1,93 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "defaultTitle",
+    "description": "defaultDescription",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://osc-api-server-alb-1638724331.us-east-2.elb.amazonaws.com"
+    }
+  ],
+  "paths": {
+    "/location": {
+      "post": {
+        "description": "Auto generated using Swagger Inspector",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n    \"locations\": [\n        {\"latitude\": 37.793871, \"longitude\": -122.395556}\n    ],\n    \"perils\": [\"fire\",\"hail\",\"heat\",\"combinedFlood\",\"precip\",\"drought\",\"wind\"],\n    \"scenarios\": [\"ssp126\",\"ssp585\"],\n    \"years\": [2020,2030,2040,2050,2075,2100]\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "http://osc-api-server-alb-1638724331.us-east-2.elb.amazonaws.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://osc-api-server-alb-1638724331.us-east-2.elb.amazonaws.com"
+        }
+      ]
+    }
+  },
+  "components": {
+    "schemas": {
+      "location_locations": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          }
+        }
+      },
+      "body": {
+        "type": "object",
+        "properties": {
+          "perils": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/location_locations"
+            }
+          },
+          "scenarios": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "years": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}
