@@ -24,6 +24,7 @@ Data contained in this repo cannot be made available to OSC platform users until
    - https://gitlab.com/jupiterintel/osc/-/releases/1.0.1 
 
 ## License
-
+   - Apache 2.0 (see https://github.com/os-climate/climatescore_svc_jupiter/blob/main/LICENSE)
+   
 ## Project status
    - Active
