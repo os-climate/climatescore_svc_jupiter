@@ -1,0 +1,6 @@
+flask
+pytest
+pylint
+pytest-cov
+psycopg2-binary
+gunicorn
